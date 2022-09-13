@@ -1,0 +1,44 @@
+<!--Eden Staton, temperature converter-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Simple Interactive Page</title>
+        <script src="tips2.js"></script>
+        <style>
+            #result {
+                font-size: 20px;
+                color: rgb(0, 0, 0);
+            }
+            #button {
+                color: rgb(128, 128, 236);
+            }
+            body {
+                background-color: antiquewhite;
+            }
+            p { 
+                text-align: center;
+            }
+            h1 {
+                padding: 50px;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Temperature Conversion</h1>
+        <p>
+            
+            <label for="tempBox">Enter temperature in 
+                <select name="tempSelector" id="temp">
+                    <option value = "default">Choose One</option>
+                    <option value="celsius">Celsius</option>
+                    <option value ="fahrenheit">Fahrenheit</option>
+                </select> </label><input type="text" id="tempBox">
+            <input type="button" value="Show Temperature" id="button" onclick="process()">
+        </p>
+        <p id="result">
+            Temperature will appear here!
+        </p>
+    </body>
+</html>
