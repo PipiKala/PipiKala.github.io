@@ -1,5 +1,6 @@
 /*3d model js */
 import * as THREE from 'three';
+
 import {GLTFLoader} from "https://cdn.rawgit.com/mrdoob/three.js/master/examples/jsm/loaders/GLTFLoader.js"
 // Get a reference to the container element
 const container = document.getElementById("model-container");
