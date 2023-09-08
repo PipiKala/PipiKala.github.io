@@ -1,6 +1,6 @@
 /*3d model js */
 import * as THREE from 'three';
-
+import {GLTFLoader} from "https://cdn.rawgit.com/mrdoob/three.js/master/examples/jsm/loaders/GLTFLoader.js"
 // Get a reference to the container element
 const container = document.getElementById("model-container");
 
@@ -17,7 +17,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 container.appendChild(renderer.domElement);
 
 // Load and display the 3D model
-const loader = new THREE.GLTFLoader();
+const loader = new GLTFLoader();
 loader.load('C:\Users\Wolve\Documents\GitHub\PipiKala.github.io\CUP OBJ.obj', (gltf) => {
     scene.add(gltf.scene);
 });
