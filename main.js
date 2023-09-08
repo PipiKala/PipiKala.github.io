@@ -1,5 +1,5 @@
 /*3d model js */
-import * as THREE from 'three';
+
 
 // Get a reference to the container element
 const container = document.getElementById("model-container");
